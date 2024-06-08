@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <img src="../../../../assets/images/logo.svg" alt="Logo do Sorteador">
+
+    <div class="buttons-container">
+        <a onclick="goToRegister()">Entrar</a>
+
+        <app-button text="Registrar" type="button" block="true" disabled="false" 
+            [props]="{
+                text: 'Registrar',
+            }"
+            (onClick)="goToRegister()">
+            Registrar
+        </app-button>
+        
+    </div>
+</nav>

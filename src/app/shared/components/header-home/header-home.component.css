@@ -1,0 +1,43 @@
+/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <img src="../../../../assets/images/logo.svg" alt="Logo do Sorteador">
+
+    <div class="buttons-container">
+        <a onclick="goToRegister()">Login</a>
+
+        <app-button text="Registrar" type="button" block="true" disabled="false"
+            (onClick)="goToRegister()"></app-button>
+    </div>
+</nav> */
+
+/* Path: sorteador-de-times/src/app/shared/components/header-home/header-home.component.html */
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../../../../assets/fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../../../../assets/fonts/Inter-Bold.ttf') format('truetype');
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Inter-Medium';
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10% 1% 5%;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
