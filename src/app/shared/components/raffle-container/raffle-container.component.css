@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../../../../assets/fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../../../../assets/fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../../../../assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('../../../../assets/fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url('../../../../assets/fonts/Inter-Light.ttf') format('truetype');
+}
+
+.raffle-content {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    min-width: 700px;
+    min-height: 375px;
+    max-width: 1000px;
+    max-height: 415px;
+    padding: 20px;
+}
+
+.raffle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#input-for-player-list {
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+}
+
+.text{
+    font-family: 'Inter-Regular';
+    font-size: 0.8rem;
+    color: #c4c4c4;
+}
+.emphasis{
+    font-family: 'Inter-Bold';
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.raffle-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.raffle-button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+}
+
+.aButton {
+
+    color: #C43E86;
+    font-family: 'Inter-Bold';
+    font-size: 1.0rem;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.input-for-player-list {
+    width: 460px;
+    height: 250px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Inter-Regular';
+    font-size: 1.0rem;
+    resize: none;
+
+}
+
+.select {
+    width: 455px;
+    height: 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Inter-Regular';
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+.raffle-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-titles {
+    font-family: 'Inter-Regular';
+    font-size: 1.2rem;
+}
+
+.radio-container {
+    display: flex;
+    gap: 10%;
+}
+
+.raffle-radio-label {
+    font-family: 'Inter-Light';
+    font-size: 1.0rem;
+}
+
+.raffle-tournament {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.tournament-input {
+    width: 455px;
+    height: 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Inter-Regular';
+    font-size: 1.0rem;
+}

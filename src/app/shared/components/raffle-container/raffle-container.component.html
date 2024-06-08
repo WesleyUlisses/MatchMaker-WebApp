@@ -1,0 +1,54 @@
+<div class="raffle-content">
+    <div class="raffle-list">
+        <h2 class="container-titles">1. Insira os participantes</h2>
+        <textarea id="input-for-player-list" class="input-for-player-list" [(ngModel)]="participants"
+            placeholder="Cada participante deve estar em um linha">
+        </textarea>
+        <p class="text">Adicione um + para indicar uma pessoa com mais de 40 anos, para balanceamento.
+            <span  class="emphasis" >Exemplo: Carlos+</span></p>
+    </div>
+
+    <div class="raffle-column">
+        <div class="raffle-quantity">
+            <h2 class="container-titles">2. Como Dividir</h2>
+            <div class="radio-container">
+                <div class="radio-content">
+                    <input type="radio" name="raffle-type" value="teams" [(ngModel)]="selectedOption"
+                        (change)="onRadioChange('teams')">
+                    <label for="raffle-type" class="raffle-radio-label"> Quantidade de equipes</label>
+                </div>
+                <div class="radio-content">
+                    <input type="radio" name="raffle-type" value="players" [(ngModel)]="selectedOption"
+                        (change)="onRadioChange('players')">
+                    <label for="raffle-type" class="raffle-radio-label"> Participantes por equipe</label>
+                </div>
+            </div>
+            <div *ngIf="selectedOption === 'teams'">
+                <select class="select" name="raffle-quantity" [(ngModel)]="selectedQuantity" aria-placeholder="Jogador">
+                    <option *ngFor="let item of quantityOfTeams" [value]="item.value" [disabled]="item.value === '2'">
+                        {{item.label}}</option>
+                </select>
+            </div>
+            <div *ngIf="selectedOption === 'players'">
+                <select class="select" name="raffle-quantity" [(ngModel)]="selectedQuantity">
+                    <option *ngFor="let item of quantityPerTeam" [value]="item.value" [disabled]="item.value === '4'">
+                        {{item.label}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="raffle-tournament">
+            <h2 class="container-titles">3. Campeonato</h2>
+            <input type="text" name="tournament" class="tournament-input" placeholder="Copa do Nordeste">
+        </div>
+
+        <div class="raffle-button-container">
+            <a onclick="cleanTextArea()" class="aButton">Limpar</a>
+            <app-button class="raffle-button" [props]="
+            {   text: 'Sortear',
+                class: 'raffle-button'
+            }" 
+            (click)="raffleTeams()">
+            </app-button>
+        </div>
+    </div>
+</div>
